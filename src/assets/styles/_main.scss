@@ -1,0 +1,70 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &_left {
+    margin-top: 50px;
+  }
+}
+
+.logo {
+  margin-top: 45px;
+  margin-left: 74px;
+  width: 295px;
+  height: 39px;
+}
+
+.inline {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-right: 76px;
+}
+
+.status {
+  margin-right: 25px;
+
+  &_text-user {
+    font-family: $lato;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $black;
+  }
+
+  p {
+    @extend .status_text-user;
+    font-weight: normal;
+  }
+
+  &_signed {
+    @extend .status_text-user;
+
+    float: right;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $black;
+    opacity: 0.5;
+  }
+
+  &_sign {
+    @extend .status_text-user;
+    margin-top: 5px;
+    line-height: 9px;
+
+    a {
+      text-decoration: underline;
+      &:visited {
+        color: $blue;
+      }
+    }
+  }
+}
+
+select.mat-input-element {
+  @extend .status_text-user;
+  padding: 0;
+}

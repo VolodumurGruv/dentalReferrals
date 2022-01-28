@@ -1,0 +1,35 @@
+<section class="your">
+  <div class="your_top">
+    <div class="your_title">your referrals</div>
+    <mat-form-field class="your_field">
+      <mat-label>type for searching here</mat-label>
+      <input matInput class="your_input" #input type="text" />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="your_bottom">
+    <nav>
+      <ul class="your_links">
+        <li routerLinkActive="active">
+          <a class="your_link" [routerLink]="[]">In Triage</a>
+        </li>
+        <li routerLinkActive="active">
+          <a class="your_link" [routerLink]="[]">Completed </a>
+        </li>
+        <li routerLinkActive="active">
+          <a class="your_link" [routerLink]="[]">Drafts(1)</a>
+        </li>
+        <li routerLinkActive="active">
+          <a class="your_link" [routerLink]="[]">Rejected</a>
+        </li>
+        <li routerLinkActive="active">
+          <a class="your_link" [routerLink]="[]">Discharged</a>
+        </li>
+        <li routerLinkActive="active">
+          <a class="your_link" [routerLink]="[]">Archived</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn-submit">Submit Referral</button>
+  </div>
+</section>

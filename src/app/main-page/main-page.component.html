@@ -1,0 +1,34 @@
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <img src="../../assets/images/logo.png" alt="dental referrals" />
+    </div>
+    <div class="nav_left">
+      <div class="inline">
+        <div class="status">
+          <p>
+            Hello <span class="status_text-user">{{ userInfo.name }}</span>
+          </p>
+          <p class="status_signed">
+            Last signed in: {{ userInfo.lastSigned | date: "dd/MM/yy hh:mm" }}
+          </p>
+        </div>
+        <div class="status_sign">
+          <a href="">Sign Out</a>
+        </div>
+      </div>
+      <div class="inline">
+        <div class="icon">
+          <mat-icon matBadge="15" matBadgeColor="warn">notifications</mat-icon>
+        </div>
+        <mat-form-field appearance="fill">
+          <mat-select>
+            <mat-option value="settings">Settings</mat-option>
+            <mat-option value="menu">Menu</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>

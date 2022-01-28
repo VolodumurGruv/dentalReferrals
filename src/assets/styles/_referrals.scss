@@ -1,0 +1,52 @@
+.your {
+  height: 140px;
+  border-radius: 8px 8px 0 0;
+  margin-top: 58px;
+  margin-left: 76px;
+  margin-right: 76px;
+  background-color: $main-blue;
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_title {
+    @extend .status_text-user;
+
+    margin-left: 30px;
+    margin-top: 23px;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  &_field {
+    margin-top: 15px;
+    margin-right: 31px;
+  }
+
+  &_input {
+    @extend .status_text-user;
+
+    font-weight: 500;
+  }
+
+  &_bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_links {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+
+  &_link {
+    margin-right: 30px;
+    text-decoration: none;
+  }
+}
