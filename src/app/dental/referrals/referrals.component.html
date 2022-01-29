@@ -10,26 +10,64 @@
   <div class="your_bottom">
     <nav>
       <ul class="your_links">
-        <li routerLinkActive="active">
-          <a class="your_link" [routerLink]="[]">In Triage</a>
+        <li
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="your_link" routerLink="">In Triage</a>
         </li>
-        <li routerLinkActive="active">
-          <a class="your_link" [routerLink]="[]">Completed </a>
+        <li
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="your_link" routerLink="">Completed </a>
         </li>
-        <li routerLinkActive="active">
-          <a class="your_link" [routerLink]="[]">Drafts(1)</a>
+        <li
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="your_link" routerLink="">Drafts(1)</a>
         </li>
-        <li routerLinkActive="active">
-          <a class="your_link" [routerLink]="[]">Rejected</a>
+        <li
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="your_link" routerLink="/referrals">Rejected</a>
         </li>
-        <li routerLinkActive="active">
-          <a class="your_link" [routerLink]="[]">Discharged</a>
+        <li
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="your_link" routerLink="">Discharged</a>
         </li>
-        <li routerLinkActive="active">
-          <a class="your_link" [routerLink]="[]">Archived</a>
+        <li
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="your_link" routerLink="">Archived</a>
         </li>
       </ul>
     </nav>
     <button class="btn-submit">Submit Referral</button>
+  </div>
+</section>
+<section class="content">
+  <div class="info">
+    <div>
+      <button class="btn">
+        <div class="btn_arrow-left"></div>
+        Back to Dashboard
+      </button>
+    </div>
+
+    <div class="info_value">{{ input.value || "tst0000422" }}</div>
+  </div>
+  <div class="main-content">
+    <div class="information">
+      <app-information></app-information>
+    </div>
+    <div class="history">
+      <app-history></app-history>
+    </div>
   </div>
 </section>

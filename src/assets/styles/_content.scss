@@ -1,0 +1,32 @@
+.content {
+  @extend .your;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background: #ffffff;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1px 30px -10px rgba(78, 146, 184, 0.2);
+  border-radius: 0px 0px 8px 8px;
+
+  &_value {
+    @extend .status_text-user;
+    margin-right: 45%;
+    margin-top: 22px;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+.information {
+  border-right: 1px solid rgba($main-blue, 0.2);
+}

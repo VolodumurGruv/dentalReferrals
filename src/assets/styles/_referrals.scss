@@ -4,7 +4,7 @@
   margin-top: 58px;
   margin-left: 76px;
   margin-right: 76px;
-  background-color: $main-blue;
+  background-color: rgba($main-blue, 0.1);
 
   &_top {
     display: flex;
@@ -43,10 +43,29 @@
     margin-left: 30px;
     margin-top: 24px;
     margin-bottom: 30px;
+    list-style: none;
   }
 
   &_link {
+    @extend .status_text-user;
+
     margin-right: 30px;
     text-decoration: none;
   }
+}
+
+.active .your_link {
+  text-align: center;
+  width: 65px;
+  height: 21px;
+  margin-right: 30px;
+  border-radius: 4px;
+  padding: 1px 5px;
+
+  background: rgba($main-blue, 0.5);
+  color: #ffffff;
+}
+
+.mat-icon {
+  cursor: pointer;
 }
