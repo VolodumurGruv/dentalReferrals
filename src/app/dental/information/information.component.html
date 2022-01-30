@@ -1,1 +1,52 @@
-<p>information works!</p>
+<div class="patient-title">Patient GP Information</div>
+<div class="patient" *ngFor="let patient of patientInfo">
+  <p class="patient_info">URN:</p>
+  <p class="patient_data">{{ patient.urn }}</p>
+
+  <p class="patient_info">Patient:</p>
+  <p class="patient_data">{{ patient.patient }}</p>
+
+  <p class="patient_info">Patient's DOB:</p>
+  <p class="patient_data">{{ patient.dob | date: "dd/MM/yy" }}</p>
+
+  <p class="patient_info">Referral Entered the System:</p>
+  <p class="patient_data">{{ patient.referralSys | date: "dd/MM/yy" }}</p>
+
+  <p class="patient_info">Practice Address:</p>
+  <p class="patient_data">{{ patient.practiceAddr }}</p>
+
+  <p class="patient_info">Practice Telephone:</p>
+  <p class="patient_data">{{ patient.practiceTel }}</p>
+
+  <p class="patient_info">Referral Reason:</p>
+  <p class="patient_data">{{ patient.reason }}</p>
+
+  <p class="patient_info">Clinical Activity:</p>
+  <p class="patient_data">{{ patient.clinicalActivity }}</p>
+
+  <p class="patient_info">Reciver:</p>
+  <p class="patient_data">{{ patient.reciver }}</p>
+
+  <p class="patient_info">Radiographs:</p>
+  <p class="patient_data" [ngClass]="color">
+    {{ patient.radiographs }}
+  </p>
+
+  <p class="patient_info">Primary care choice:</p>
+  <p class="patient_data">{{ patient.primaryCare }}</p>
+
+  <p class="patient_info">Secondary care choice:</p>
+  <p class="patient_data">{{ patient.secondaryCare }}</p>
+
+  <p class="patient_info">Tertiary care choice:</p>
+  <p class="patient_data">{{ patient.tertiaryCare }}</p>
+
+  <p class="patient_info">Triage Date:</p>
+  <p class="patient_data">{{ patient.triageDate }}</p>
+
+  <p class="patient_info">Comments to Referrer:</p>
+  <p class="patient_data">{{ patient.commentsRef }}</p>
+
+  <p class="patient_info">Comments from Triager:</p>
+  <p class="patient_data">{{ patient.commentsTriager }}</p>
+</div>

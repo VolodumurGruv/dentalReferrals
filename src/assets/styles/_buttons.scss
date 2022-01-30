@@ -1,5 +1,5 @@
 .btn-submit {
-  @extend .status_text-user;
+  @extend %font-shared;
 
   width: 147px;
   height: 32px;
@@ -10,14 +10,14 @@
   background: $main-blue;
   cursor: pointer;
   // text
+  font-size: 14px;
   font-weight: bold;
   line-height: 16px;
-  color: #ffffff;
+  color: $white;
 }
 
 .btn {
   @extend .btn-submit;
-  @extend .status_text-user;
 
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@
   border-radius: 30px;
   font-weight: bold;
   line-height: 16px;
-  background: #ffffff;
+  background: $white;
   color: $main-blue;
 
   &_arrow-left {
@@ -38,9 +38,14 @@
     border: 5px solid transparent;
     border-right: 5px solid $main-blue;
   }
+}
 
-  .mat-icon {
-    width: 10px;
-    margin-right: 8px;
-  }
+.btn_re-submit {
+  @extend .btn-submit;
+
+  width: 112px;
+  text-align: center;
+  padding: 6px;
+  font-size: 11px;
+  line-height: 8px;
 }

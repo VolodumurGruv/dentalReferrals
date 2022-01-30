@@ -12,7 +12,7 @@
   }
 
   &_title {
-    @extend .status_text-user;
+    @extend %font-shared;
 
     margin-left: 30px;
     margin-top: 23px;
@@ -27,7 +27,7 @@
   }
 
   &_input {
-    @extend .status_text-user;
+    @extend %font-shared;
 
     font-weight: 500;
   }
@@ -47,8 +47,9 @@
   }
 
   &_link {
-    @extend .status_text-user;
+    @extend %font-shared;
 
+    font-size: 14px;
     margin-right: 30px;
     text-decoration: none;
   }
@@ -63,7 +64,7 @@
   padding: 1px 5px;
 
   background: rgba($main-blue, 0.5);
-  color: #ffffff;
+  color: $white;
 }
 
 .mat-icon {

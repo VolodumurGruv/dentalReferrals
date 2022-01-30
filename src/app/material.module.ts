@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatBadgeModule,
     MatIconModule,
     MatTabsModule,
+    MatTableModule,
   ],
   exports: [
     MatInputModule,
@@ -22,6 +24,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatBadgeModule,
     MatIconModule,
     MatTabsModule,
+    MatTableModule
   ],
 })
 export class MaterilasModule {}

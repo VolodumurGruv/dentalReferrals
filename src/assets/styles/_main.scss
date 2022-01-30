@@ -25,9 +25,7 @@
   margin-right: 25px;
 
   &_text-user {
-    font-family: $lato;
-    font-weight: 900;
-    font-style: normal;
+    @extend %font-shared;
     font-size: 14px;
     line-height: 20px;
     color: $black;
@@ -39,15 +37,14 @@
   }
 
   &_signed {
-    @extend .status_text-user;
+    @extend %font-shared;
 
     float: right;
     margin-top: 5px;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    color: $black;
-    opacity: 0.5;
+    color: rgba($black, 0.5);
   }
 
   &_sign {
@@ -67,4 +64,14 @@
 select.mat-input-element {
   @extend .status_text-user;
   padding: 0;
+}
+
+.link {
+  @extend %font-shared;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: underline;
+  color: $blue;
 }

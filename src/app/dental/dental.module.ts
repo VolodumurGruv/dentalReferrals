@@ -4,10 +4,11 @@ import { ReferralsComponent } from './referrals/referrals.component';
 import { InformationComponent } from './information/information.component';
 import { HistoryComponent } from './history/history.component';
 import { MaterilasModule } from '../material.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [ReferralsComponent, InformationComponent, HistoryComponent],
-  imports: [DentalRoutingModule, MaterilasModule],
+  imports: [CommonModule, DentalRoutingModule, MaterilasModule],
   exports: [DentalRoutingModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

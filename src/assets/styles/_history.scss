@@ -1,0 +1,70 @@
+.history {
+  width: 627px;
+
+  &_content {
+    width: 468px;
+    margin-left: 108px;
+    border-bottom: 1px solid rgba($main-blue, 0.2);
+  }
+
+  &_title {
+    @extend .patient-title;
+    margin-left: 118px;
+  }
+
+  &_status {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin-left: 10px;
+  }
+
+  &_keys {
+    @extend .patient_info;
+  }
+
+  &_value {
+    @extend .patient_data;
+  }
+
+  &_value-black {
+    @extend .history_value;
+    color: $black;
+  }
+}
+
+.current-status {
+  @extend %font-shared;
+  width: 79px;
+  border-radius: 2px;
+  padding: 5px 9px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 7px;
+  color: $light-black;
+  background: #ffeecd;
+}
+
+.re-submit {
+  display: flex;
+  justify-content: end;
+  margin-top: 17px;
+  margin-bottom: 13px;
+}
+
+.attachment {
+  @extend .history_content;
+
+  &_title {
+    @extend .patient-title;
+    margin-left: 10px;
+  }
+
+  &_links {
+    margin-bottom: 25px;
+    margin-left: 5px;
+    list-style: none;
+  }
+  &_link {
+    margin-bottom: 15px;
+  }
+}
