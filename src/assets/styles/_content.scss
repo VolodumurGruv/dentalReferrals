@@ -27,6 +27,9 @@
 .main-content {
   display: flex;
   justify-content: space-between;
+  background: $white;
+  box-shadow: 0px 10px 30px -6px rgba(3, 73, 113, 0.1);
+  border-radius: 8px;
 }
 .information {
   width: 501px;
@@ -55,9 +58,12 @@
   }
 
   &_data {
+    @extend %font-shared;
+
     font-weight: 500;
     margin-left: 90px !important;
     font-size: 12px;
+    line-height: 20px;
     color: $light-black;
   }
 }
@@ -68,4 +74,24 @@
 
 .green {
   color: green;
+}
+
+.scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 500px;
+
+  // firefox scroll
+  scrollbar-width: 5px;
+  scrollbar-color: $border-grey transparent;
+  // chrome
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $border-grey;
+    border-radius: 20px;
+    border: 3px solid $border-grey;
+  }
 }

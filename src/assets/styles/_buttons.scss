@@ -1,7 +1,7 @@
 .btn-submit {
   @extend %font-shared;
 
-  width: 147px;
+  padding: 0 25px;
   height: 32px;
   margin-top: 10px;
   margin-right: 31px;
@@ -22,7 +22,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 175px;
   height: 32px;
   margin: 22px 52px;
   border: 1px solid $main-blue;

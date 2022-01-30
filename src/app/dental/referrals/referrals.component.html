@@ -62,12 +62,23 @@
 
     <div class="info_value">{{ input.value || "tst0000422" }}</div>
   </div>
-  <div class="main-content">
-    <div class="information">
-      <app-information></app-information>
+  <!-- scroll -->
+  <div class="scroll">
+    <div class="main-content">
+      <div class="information">
+        <app-information></app-information>
+      </div>
+      <div class="history">
+        <app-history></app-history>
+      </div>
     </div>
-    <div class="history">
-      <app-history></app-history>
+  </div>
+  <div class="footer">
+    <div>
+      <button class="btn footer_btn">Download attachments as single PDF</button>
+    </div>
+    <div>
+      <button class="btn footer_btn">Add Information</button>
     </div>
   </div>
 </section>

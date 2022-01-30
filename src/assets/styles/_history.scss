@@ -14,7 +14,7 @@
 
   &_status {
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 2fr 3fr;
     margin-left: 10px;
   }
 
@@ -23,12 +23,20 @@
   }
 
   &_value {
-    @extend .patient_data;
+    @extend %font-shared;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $light-black;
   }
 
   &_value-black {
-    @extend .history_value;
-    color: $black;
+    @extend %font-shared;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
   }
 }
 
@@ -36,6 +44,7 @@
   @extend %font-shared;
   width: 79px;
   border-radius: 2px;
+  margin: 0 12px;
   padding: 5px 9px;
   font-weight: 500;
   font-size: 10px;
@@ -66,5 +75,22 @@
   }
   &_link {
     margin-bottom: 15px;
+  }
+}
+
+.rejections {
+  margin-left: 118px;
+
+  &_title {
+    @extend .history_title;
+    margin-left: 0;
+  }
+
+  &_links {
+    @extend .attachment_links;
+  }
+
+  &_link {
+    @extend .attachment_link;
   }
 }
