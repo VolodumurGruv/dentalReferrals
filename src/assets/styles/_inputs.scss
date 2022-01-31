@@ -1,0 +1,50 @@
+#input-wrap {
+  margin-right: 31px;
+  .mat-form-field {
+    width: 432px;
+  }
+
+  .mat-form-field-underline {
+    background-color: $main-blue;
+  }
+
+  .mat-form-field-label {
+    @extend %font-shared;
+    color: $light-black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .mat-form-field-label-has-label {
+    @extend %font-shared;
+    color: $light-black;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .mat-input-element {
+    @extend %font-shared;
+  }
+
+  .mat-icon {
+    cursor: pointer;
+  }
+}
+
+#select-wrap {
+  .mat-form-field {
+    width: 184px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid $border-grey;
+    background: $white;
+  }
+
+  .mat-select-content {
+    color: green !important;
+    background: red !important;
+  }
+}

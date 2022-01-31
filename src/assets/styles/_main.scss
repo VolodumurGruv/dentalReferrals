@@ -61,11 +61,6 @@
   }
 }
 
-select.mat-input-element {
-  @extend .status_text-user;
-  padding: 0;
-}
-
 .link {
   @extend %font-shared;
 

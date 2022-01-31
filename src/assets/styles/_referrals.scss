@@ -21,17 +21,6 @@
     line-height: 44px;
   }
 
-  &_field {
-    margin-top: 15px;
-    margin-right: 31px;
-  }
-
-  &_input {
-    @extend %font-shared;
-
-    font-weight: 500;
-  }
-
   &_bottom {
     display: flex;
     justify-content: space-between;
@@ -65,8 +54,4 @@
 
   background: rgba($main-blue, 0.5);
   color: $white;
-}
-
-.mat-icon {
-  cursor: pointer;
 }
