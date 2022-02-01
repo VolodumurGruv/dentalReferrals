@@ -1,5 +1,7 @@
 #input-wrap {
   margin-right: 31px;
+  margin-top: 13px;
+
   .mat-form-field {
     width: 432px;
   }
@@ -26,10 +28,19 @@
 
   .mat-input-element {
     @extend %font-shared;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $light-black;
   }
 
   .mat-icon {
     cursor: pointer;
+  }
+
+  .mat-select-arrow .mat-focused {
+    background-color: $main-blue;
   }
 }
 
@@ -41,10 +52,5 @@
     border-radius: 4px;
     border: 1px solid $border-grey;
     background: $white;
-  }
-
-  .mat-select-content {
-    color: green !important;
-    background: red !important;
   }
 }
